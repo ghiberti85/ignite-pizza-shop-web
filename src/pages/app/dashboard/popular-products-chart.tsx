@@ -33,7 +33,7 @@ export function PopularProductsChart() {
       </CardHeader>
       <CardContent>
         <ResponsiveContainer width="100%" height={240}>
-          <PieChart style={{ fontSize: 10 }}>
+          <PieChart style={{ fontSize: 12 }}>
             <Pie
               data={data}
               dataKey="amount"
