@@ -21,6 +21,7 @@ export function AccountMenu() {
   const { data: profile, isLoading: isLoadingMProfile } = useQuery({
     queryKey: ['/profile'],
     queryFn: getProfile,
+    staleTime: Infinity,
   })
 
   const { data: managedRestaurant, isLoading: isLoadingManagedRestaurant } =
