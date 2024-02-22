@@ -20,6 +20,8 @@ import {
   TableRow,
 } from '@/components/ui/table'
 
+import { OrderDetailsSkeleton } from './orders-details-skeleton'
+
 export interface OrderDetailsProps {
   orderId: string
   open: boolean
@@ -39,48 +41,52 @@ export function OrderDetails({ orderId, open }: OrderDetailsProps) {
         <DialogDescription>Detalhes do pedido</DialogDescription>
       </DialogHeader>
 
-      {order && (
+      {order ? (
         <div className="space-y-6">
           <Table>
-            <TableRow>
-              <TableCell className="text-muted-foreground">Status</TableCell>
-              <TableCell className="flex justify-end">
-                <OrderStatus status={order.status} />
-              </TableCell>
-            </TableRow>
+            <TableBody>
+              <TableRow>
+                <TableCell className="text-muted-foreground">Status</TableCell>
+                <TableCell className="flex justify-end">
+                  <OrderStatus status={order.status} />
+                </TableCell>
+              </TableRow>
 
-            <TableRow>
-              <TableCell className="text-muted-foreground">Cliente</TableCell>
-              <TableCell className="flex justify-end">
-                {order.customer.name}
-              </TableCell>
-            </TableRow>
+              <TableRow>
+                <TableCell className="text-muted-foreground">Cliente</TableCell>
+                <TableCell className="flex justify-end">
+                  {order.customer.name}
+                </TableCell>
+              </TableRow>
 
-            <TableRow>
-              <TableCell className="text-muted-foreground">Telefone</TableCell>
-              <TableCell className="flex justify-end">
-                {order.customer.phone ?? 'Não informado'}
-              </TableCell>
-            </TableRow>
+              <TableRow>
+                <TableCell className="text-muted-foreground">
+                  Telefone
+                </TableCell>
+                <TableCell className="flex justify-end">
+                  {order.customer.phone ?? 'Não informado'}
+                </TableCell>
+              </TableRow>
 
-            <TableRow>
-              <TableCell className="text-muted-foreground">E-mail</TableCell>
-              <TableCell className="flex justify-end">
-                {order.customer.email}
-              </TableCell>
-            </TableRow>
+              <TableRow>
+                <TableCell className="text-muted-foreground">E-mail</TableCell>
+                <TableCell className="flex justify-end">
+                  {order.customer.email}
+                </TableCell>
+              </TableRow>
 
-            <TableRow>
-              <TableCell className="text-muted-foreground">
-                Realizado há
-              </TableCell>
-              <TableCell className="flex justify-end">
-                {formatDistanceToNow(order.createdAt, {
-                  locale: ptBR,
-                  addSuffix: true,
-                })}
-              </TableCell>
-            </TableRow>
+              <TableRow>
+                <TableCell className="text-muted-foreground">
+                  Realizado há
+                </TableCell>
+                <TableCell className="flex justify-end">
+                  {formatDistanceToNow(order.createdAt, {
+                    locale: ptBR,
+                    addSuffix: true,
+                  })}
+                </TableCell>
+              </TableRow>
+            </TableBody>
           </Table>
 
           <Table>
@@ -130,6 +136,8 @@ export function OrderDetails({ orderId, open }: OrderDetailsProps) {
             </TableFooter>
           </Table>
         </div>
+      ) : (
+        <OrderDetailsSkeleton />
       )}
     </DialogContent>
   )
