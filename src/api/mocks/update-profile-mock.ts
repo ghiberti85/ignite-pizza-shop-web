@@ -8,8 +8,9 @@ export const updateProfileMock = http.put<never, UpdateProfileBody>(
     const { name } = await request.json()
 
     if (name === 'Rocket Pizza') {
-      return new HttpResponse(null, { status: 204 })
+      return new HttpResponse(null, { status: 201 })
+    } else {
+      return new HttpResponse(null, { status: 400 })
     }
-    return new HttpResponse(null, { status: 400 })
   },
 )
