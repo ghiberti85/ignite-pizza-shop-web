@@ -22,7 +22,7 @@
 
 ## 🛠 About
 
-The Pizza Show Web project is a dashboard designed for restaurant owners participating in delivery applications. 
+The Pizza Shop Web project is a dashboard designed for restaurant owners participating in delivery applications. 
 
 
 - It allows tracking metrics such as monthly and daily orders, visualizing charts, and accessing details for each order.
