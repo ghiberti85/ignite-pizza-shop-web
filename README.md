@@ -20,8 +20,6 @@
 
 <img src='/public/image-4.png'/>
 
----
-
 <br>
 
 ## 📄 About
@@ -38,9 +36,6 @@ The Pizza Shop Web project is a dashboard designed for restaurant owners partici
 
 - The API is developed with BAN (Back-end as a Node) and will be delivered ready for use.
 
-
----
-
 <br>
 
 ## 📚 Learning
@@ -55,8 +50,6 @@ All the things that I learned and practiced with this project
 
 - Unit Testing: This involves writing and executing tests for individual units or components of your code to ensure that each part works as intended. In the context of front-end development, unit tests might focus on testing functions, components, or specific features in isolation.
 
----
-
 <br>
 
 ## 🧪 Technologies
@@ -69,8 +62,6 @@ This project was developed using de following technologies:
 - [Radix](https://www.radix-ui.com/)
 - [Tailwind](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
-
----
 
 <br>
 
@@ -91,8 +82,6 @@ This project was developed using de following technologies:
 - [X] Average orders per day (monthly/overall);
 - [X] Sound notifications for new orders (change favicon);
 
----
-
 <br>
 
 ## ⚙️ Running
@@ -100,8 +89,6 @@ This project was developed using de following technologies:
 - pnpm install
 - pnpm run dev:test
 - Open http://localhost:5173 with your browser to see the result.
-
----
 
 <br>
 
