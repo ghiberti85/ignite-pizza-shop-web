@@ -77,7 +77,7 @@ This project was developed using de following technologies:
 
 <br>
 
-## Components
+## Features
 
 - [X] Establishment registration;
 - [X] Establishment login (magic link);
