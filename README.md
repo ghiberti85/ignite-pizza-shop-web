@@ -1,8 +1,8 @@
-<h1 align="center">🍕 Pizza Shop 🍕</h1>
+<h1 align="center">🍕 Pizza Shop Web 🍕</h1>
 
 <br>
 
-## Pizza Show Web: A React Dashboard for Restaurant Owners in Delivery Apps
+#### A React Dashboard for Restaurant Owners in Delivery Apps
 
 <br>
 
