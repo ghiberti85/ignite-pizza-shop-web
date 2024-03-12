@@ -20,10 +20,13 @@
 
 <img src='/public/image-4.png'/>
 
-## 🛠 About
+---
+
+<br>
+
+## 📄 About
 
 The Pizza Shop Web project is a dashboard designed for restaurant owners participating in delivery applications. 
-
 
 - It allows tracking metrics such as monthly and daily orders, visualizing charts, and accessing details for each order.
 
@@ -36,15 +39,9 @@ The Pizza Shop Web project is a dashboard designed for restaurant owners partici
 - The API is developed with BAN (Back-end as a Node) and will be delivered ready for use.
 
 
-<br>
-
-### Deploy
-
-- 💻 🛠
-
-<br>
-
 ---
+
+<br>
 
 ## 📚 Learning
 
@@ -77,7 +74,7 @@ This project was developed using de following technologies:
 
 <br>
 
-## Features
+## 🪄 Features
 
 - [X] Establishment registration;
 - [X] Establishment login (magic link);
@@ -94,14 +91,18 @@ This project was developed using de following technologies:
 - [X] Average orders per day (monthly/overall);
 - [X] Sound notifications for new orders (change favicon);
 
+---
+
 <br>
 
-## Running
+## ⚙️ Running
 
 - pnpm install
 - pnpm run dev:test
 - Open http://localhost:5173 with your browser to see the result.
 
 ---
+
+<br>
 
 Developed with 💚 by [@ghiberti85](https://github.com/ghiberti85)
