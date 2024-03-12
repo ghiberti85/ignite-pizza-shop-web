@@ -20,7 +20,7 @@
 
 <img src='/public/image-4.png'/>
 
-## 🛠 About the project
+## 🛠 About
 
 The Pizza Show Web project is a dashboard designed for restaurant owners participating in delivery applications. 
 
@@ -46,8 +46,6 @@ The Pizza Show Web project is a dashboard designed for restaurant owners partici
 
 ---
 
-<br>
-
 ## 📚 Learning
 
 All the things that I learned and practiced with this project
@@ -59,8 +57,6 @@ All the things that I learned and practiced with this project
 - Connection with Back-end (API): Explanation: This topic covers how your front-end interacts with the back-end or API. It includes making requests to the server, handling responses, and managing the flow of data between the user interface and the server.
 
 - Unit Testing: This involves writing and executing tests for individual units or components of your code to ensure that each part works as intended. In the context of front-end development, unit tests might focus on testing functions, components, or specific features in isolation.
-
-<br>
 
 ---
 
@@ -76,12 +72,6 @@ This project was developed using de following technologies:
 - [Radix](https://www.radix-ui.com/)
 - [Tailwind](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
-
-<br>
-
----
-
-<br>
 
 ---
 
@@ -106,7 +96,7 @@ This project was developed using de following technologies:
 
 <br>
 
-## Install & Running Local
+## Running
 
 - pnpm install
 - pnpm run dev:test
