@@ -4,7 +4,7 @@ import { GetProfileResponse } from '../get-profile'
 
 export const getProfileMock = http.get<never, never, GetProfileResponse>(
   '/me',
-  () => {
+  async () => {
     return HttpResponse.json({
       id: 'custom-user-id',
       name: 'John Doe',

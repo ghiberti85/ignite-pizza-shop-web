@@ -1,16 +1,16 @@
 import { http, HttpResponse } from 'msw'
 
-import { UpdateProfileBody } from '../update-profile'
+import { UpdateProfileRequest } from '../update-profile'
 
-export const updateProfileMock = http.put<never, UpdateProfileBody>(
+export const updateProfileMock = http.put<never, UpdateProfileRequest>(
   '/profile',
   async ({ request }) => {
     const { name } = await request.json()
 
-    if (name === 'Rocket Pizza') {
-      return new HttpResponse(null, { status: 201 })
-    } else {
+    if (name === 'Invalid name') {
       return new HttpResponse(null, { status: 400 })
+    } else {
+      return new HttpResponse(null, { status: 204 })
     }
   },
 )
